@@ -1,0 +1,214 @@
+/* General resets and font settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  body {
+    background: #000;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Header with Netflix logo at the top-left */
+  .auth-header {
+    position: relative;
+    width: 100%;
+    padding: 20px 40px;
+    z-index: 10;
+  }
+  
+  .auth-logo {
+    height: 45px;
+    cursor: pointer;
+  }
+  
+  /* The full-page container for login/register */
+  .auth-page {
+    position: relative;
+    height: 100vh; /* Full screen height */
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Background image layer (darkened by overlay) */
+  .auth-bg {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0; 
+    bottom: 0;
+    background: url('images/netflix-bg.jpg') center center / cover no-repeat;
+    z-index: 1;
+  }
+  
+  /* Dark overlay on top of the background to darken it more */
+  .auth-overlay {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0; 
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 2;
+  }
+  
+  /* Container that holds the form */
+  .auth-container {
+    position: relative;
+    z-index: 3;
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  /* The form box itself */
+  .auth-form {
+    background-color: rgba(0,0,0,0.75);
+    padding: 60px 68px 40px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  /* Main heading for the form (Sign In / Sign Up) */
+  .auth-form h1 {
+    font-size: 32px;
+    margin-bottom: 28px;
+    font-weight: 700;
+  }
+  
+  /* Each labeled input group */
+  .auth-form-group {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-form-group label {
+    font-size: 13px;
+    margin-bottom: 6px;
+    color: #b3b3b3;
+  }
+  
+  .auth-form-group input {
+    padding: 10px 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background: #333;
+    color: #fff;
+  }
+  
+  /* Sign In / Sign Up button */
+  .auth-submit-btn {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #e50914;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 24px;
+    transition: background 0.3s ease;
+  }
+  
+  .auth-submit-btn:hover {
+    background: #f6121d;
+  }
+  
+  /* Remember me + Need help? row */
+  .auth-extra-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #b3b3b3;
+  }
+  
+  /* Remember me checkbox */
+  .remember-me {
+    display: flex;
+    align-items: center;
+  }
+  
+  .remember-me input {
+    margin-right: 4px;
+    width: auto;
+  }
+  
+  /* "Need help?" link */
+  .help-link {
+    color: #b3b3b3;
+    text-decoration: none;
+  }
+  
+  .help-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer area under the form (Sign Up prompt, reCAPTCHA note, etc.) */
+  .auth-form-footer {
+    margin-top: 16px;
+    color: #737373;
+    font-size: 16px;
+  }
+  
+  /* "Sign up now" link or "Sign in" link */
+  .signup-text {
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+  
+  .signup-text a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 4px;
+  }
+  
+  .signup-text a:hover {
+    text-decoration: underline;
+  }
+  
+  /* reCAPTCHA note styling */
+  .recaptcha-note {
+    font-size: 13px;
+    line-height: 1.4;
+    color: #8c8c8c;
+  }
+  
+  .recaptcha-note a {
+    color: #0071eb;
+    text-decoration: none;
+  }
+  
+  .recaptcha-note a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive: smaller screens */
+  @media (max-width: 600px) {
+    .auth-header {
+      padding: 20px;
+    }
+  
+    .auth-form {
+      padding: 40px 20px;
+    }
+  
+    .auth-form h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  }
+  

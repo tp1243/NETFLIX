@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Netflix Clone</title>
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+  <!-- Header with Netflix logo -->
+  <header class="auth-header">
+    <img src="images/logo.png" alt="Netflix Logo" class="auth-logo">
+  </header>
+
+  <!-- Background + Overlay + Form Container -->
+  <div class="auth-page">
+    <div class="auth-bg"></div>
+    <div class="auth-overlay"></div>
+
+    <div class="auth-container">
+      <form id="register-form" class="auth-form">
+        <h1>Sign Up</h1>
+
+        <div class="auth-form-group">
+          <label for="register-name">Full Name</label>
+          <input type="text" id="register-name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="auth-form-group">
+          <label for="register-email">Email or phone number</label>
+          <input type="email" id="register-email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="auth-form-group">
+          <label for="register-password">Password</label>
+          <input type="password" id="register-password" placeholder="Enter your password" required>
+        </div>
+
+        <button type="submit" class="auth-submit-btn">Sign Up</button>
+
+        <div class="auth-form-footer">
+          <div class="signup-text">
+            <span>Already have an account?</span>
+            <a href="signin.html">Sign In</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Firebase & Scripts -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
