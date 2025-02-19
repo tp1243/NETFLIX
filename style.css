@@ -266,77 +266,32 @@ input[type="radio"]
     margin-bottom: 10px;
 }
 
-
-/* 
-  Netflix-like background for the auth pages (login & register).
-  Replace `images/netflix-bg.jpg` with your own background image or a Netflix-themed image.
-*/
-  /* Responsive adjustments */
-  @media (max-width: 600px) {
-    .auth-container {
-      padding: 40px 20px;
-    }
-    .auth-form {
-      padding: 40px 20px;
-    }
-    .auth-form h1 {
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-  }
-  
-
-
-/* Tablets and smaller screens */
-@media (max-width: 768px) {
-  .header-content h1 {
-    font-size: 2rem;
-  }
-  .header-content h3 {
-    font-size: 1.3rem;
-  }
-  .email-signup input[type="email"] {
-    width: 80%;
-    margin-bottom: 10px;
-  }
-  .email-signup button {
-    width: 80%;
-  }
-  .features .row {
-    flex-direction: column;
-  }
-}
-
-/* Smartphones */
-@media (max-width: 480px) {
-  .header nav {
-    flex-direction: column;
-  }
-  .header nav div {
-    margin-top: 10px;
-  }
-  .header nav img.logo {
-    max-width: 100px;
-  }
+@media (min-width: 768px) {
   .header-content {
-    margin-top: 60px;
-    padding: 0 10px;
+    padding: 40px;
   }
-  .header-content h1 {
-    font-size: 1.8rem;
+
+  .features .row {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
   }
-  .header-content h3 {
-    font-size: 1.2rem;
+
+  .features .img-col, .features .text-col {
+    width: 50%;
   }
-  .email-signup input[type="email"],
-  .email-signup button {
-    width: 100%;
-    margin: 5px 0;
+
+  .features img {
+    max-width: 100%;
   }
+
+  .faq {
+    width: 80%;
+    margin: auto;
+  }
+
   .footer .row {
-    flex-direction: column;
-  }
-  .footer .col {
-    margin-bottom: 15px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
