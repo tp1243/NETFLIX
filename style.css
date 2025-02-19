@@ -271,161 +271,6 @@ input[type="radio"]
   Netflix-like background for the auth pages (login & register).
   Replace `images/netflix-bg.jpg` with your own background image or a Netflix-themed image.
 */
-.auth-page {
-    position: relative;
-    height: 100vh;
-    background: url('images/netflix-bg.jpg') center/cover no-repeat;
-  }
-  
-  /* Dark overlay on top of the background to darken it */
-  .auth-overlay {
-    position: absolute;
-    top: 0; 
-    left: 0;
-    width: 100%; 
-    height: 100%;
-    background: rgba(0,0,0,0.6);
-    z-index: 1;
-  }
-  
-  /* Container for the form */
-  .auth-container {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    max-width: 450px;
-    margin: 0 auto;
-    padding: 80px 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  
-  /* Actual form box styling */
-  .auth-form {
-    width: 100%;
-    max-width: 350px;
-    background: rgba(0,0,0,0.75);
-    padding: 60px 68px 40px;
-    border-radius: 4px;
-    color: #fff;
-  }
-  
-  /* Form Heading (Sign In / Sign Up) */
-  .auth-form h1 {
-    font-size: 32px;
-    margin-bottom: 28px;
-  }
-  
-  /* Form group (label + input) */
-  .auth-form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 16px;
-  }
-  
-  .auth-form-group label {
-    font-size: 14px;
-    margin-bottom: 6px;
-    color: #b3b3b3;
-  }
-  
-  .auth-form-group input {
-    padding: 10px 12px;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    background: #333;
-    color: #fff;
-    outline: none;
-  }
-  
-  /* Sign In / Sign Up button */
-  .auth-submit-btn {
-    width: 100%;
-    padding: 16px;
-    font-size: 16px;
-    font-weight: 600;
-    background: #e50914;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    cursor: pointer;
-    margin-top: 24px;
-    transition: background 0.3s ease;
-  }
-  
-  .auth-submit-btn:hover {
-    background: #f6121d;
-  }
-  
-  /* Extra options below the Sign In button */
-  .auth-extra-options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 12px;
-    font-size: 13px;
-    color: #b3b3b3;
-  }
-  
-  .remember-me {
-    display: flex;
-    align-items: center;
-  }
-  
-  .remember-me input {
-    margin-right: 5px;
-    width: auto;
-  }
-  
-  /* Link styling */
-  .help-link {
-    color: #b3b3b3;
-    text-decoration: none;
-    margin-left: 5px;
-  }
-  .help-link:hover {
-    text-decoration: underline;
-  }
-  
-  /* Footer area below the form */
-  .auth-form-footer {
-    margin-top: 16px;
-    font-size: 16px;
-    color: #737373;
-  }
-  
-  /* "Sign up now" / "Sign in" links */
-  .signup-text {
-    margin-bottom: 16px;
-  }
-  
-  .signup-text a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 4px;
-  }
-  .signup-text a:hover {
-    text-decoration: underline;
-  }
-  
-  /* reCAPTCHA note */
-  .recaptcha-note {
-    font-size: 13px;
-    line-height: 1.4;
-    color: #8c8c8c;
-  }
-  
-  /* Small text link inside the recaptcha note */
-  .recaptcha-note a {
-    color: #0071eb;
-    text-decoration: none;
-  }
-  .recaptcha-note a:hover {
-    text-decoration: underline;
-  }
-  
   /* Responsive adjustments */
   @media (max-width: 600px) {
     .auth-container {
@@ -440,3 +285,58 @@ input[type="radio"]
     }
   }
   
+
+
+/* Tablets and smaller screens */
+@media (max-width: 768px) {
+  .header-content h1 {
+    font-size: 2rem;
+  }
+  .header-content h3 {
+    font-size: 1.3rem;
+  }
+  .email-signup input[type="email"] {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  .email-signup button {
+    width: 80%;
+  }
+  .features .row {
+    flex-direction: column;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+  .header nav {
+    flex-direction: column;
+  }
+  .header nav div {
+    margin-top: 10px;
+  }
+  .header nav img.logo {
+    max-width: 100px;
+  }
+  .header-content {
+    margin-top: 60px;
+    padding: 0 10px;
+  }
+  .header-content h1 {
+    font-size: 1.8rem;
+  }
+  .header-content h3 {
+    font-size: 1.2rem;
+  }
+  .email-signup input[type="email"],
+  .email-signup button {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .footer .row {
+    flex-direction: column;
+  }
+  .footer .col {
+    margin-bottom: 15px;
+  }
+}
