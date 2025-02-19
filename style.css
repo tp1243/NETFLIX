@@ -124,7 +124,8 @@ nav button {
   padding: 30px 0;
 }
 
-.text-col, .img-col {
+.text-col,
+.img-col {
   flex-basis: 100%;
 }
 
@@ -188,12 +189,12 @@ label::after {
   transition: max-height 0.3s, padding 0.3s;
 }
 
-.accordion input[type="radio"]:checked + label + .content {
+.accordion input[type="radio"]:checked+label+.content {
   max-height: 400px;
   padding: 20px 15px;
 }
 
-.accordion input[type="radio"]:checked + label::after {
+.accordion input[type="radio"]:checked+label::after {
   transform: rotate(135deg);
 }
 
@@ -238,70 +239,67 @@ label::after {
   font-size: 14px;
   margin-top: 20px;
 }
+/* 📌 Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 
-/* Responsive Design */
-@media (min-width: 768px) {
+  .user-info {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .username {
+    font-size: 12px;
+  }
+
   .header-content h1 {
-      font-size: 45px;
-      line-height: 55px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .email-signup {
+    flex-direction: column;
+    align-items: center;
   }
 
   .email-signup input {
-      padding: 15px;
+    width: 100%;
   }
 
   .email-signup button {
-      font-size: 18px;
-      padding: 15px 30px;
-  }
-
-  .features {
-      text-align: left;
-  }
-
-  .row {
-      flex-direction: row;
-      text-align: left;
-  }
-
-  .text-col, .img-col {
-      flex-basis: 50%;
-  }
-
-  .img-col img {
-      width: 90%;
+    width: 100%;
   }
 
   .footer .row {
-      flex-direction: row;
-      justify-content: space-between;
-      text-align: left;
-  }
-
-  .footer .col {
-      flex-basis: 25%;
+    flex-direction: column;
+    text-align: center;
   }
 }
 
 @media (min-width: 1024px) {
   .header-content {
-      width: 60%;
+    width: 60%;
   }
 
   .header-content h1 {
-      font-size: 55px;
-      line-height: 65px;
+    font-size: 55px;
+    line-height: 65px;
   }
 
   .features {
-      font-size: 22px;
+    font-size: 22px;
+    text-align: left;
   }
 
   .faq h2 {
-      font-size: 35px;
+    font-size: 35px;
   }
 
   .footer .row {
-      justify-content: space-around;
+    justify-content: space-around;
   }
 }
