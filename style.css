@@ -291,3 +291,182 @@ input[type="radio"]
     transform: scale(1.1);
   }
   
+
+  /* Responsive Design */
+@media (max-width: 1024px) {
+    .header-content {
+      width: 80%;
+    }
+  
+    .header-content h1 {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  
+    .email-signup {
+      flex-direction: column;
+      max-width: 90%;
+    }
+  
+    .email-signup input {
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+    }
+  
+    .email-signup button {
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+    }
+  
+    /* Fix username alignment */
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  
+    .user-info span {
+      font-size: 16px;
+      white-space: nowrap;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .logo {
+      width: 120px;
+      margin-bottom: 10px;
+    }
+  
+    nav button {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  
+    .header-content h1 {
+      font-size: 32px;
+      line-height: 42px;
+    }
+  
+    .email-signup {
+      max-width: 100%;
+    }
+  
+    .email-signup input {
+      width: 100%;
+      padding: 12px;
+      font-size: 14px;
+    }
+  
+    .email-signup button {
+      font-size: 14px;
+      padding: 12px;
+    }
+  
+    .features {
+      font-size: 16px;
+    }
+  
+    .row {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .img-col img {
+      width: 100%;
+    }
+  
+    .footer .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer .col {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+  
+    /* Adjust username alignment */
+    .user-info {
+      flex-direction: column;
+      text-align: center;
+      gap: 5px;
+    }
+  
+    .user-info span {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      padding: 10px 4%;
+    }
+  
+    .header-content {
+      width: 95%;
+    }
+  
+    .header-content h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  
+    .header-content h3 {
+      font-size: 16px;
+    }
+  
+    .email-signup {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .email-signup input {
+      width: 100%;
+      padding: 12px;
+      font-size: 14px;
+    }
+  
+    .email-signup button {
+      width: 100%;
+      padding: 12px;
+      font-size: 14px;
+    }
+  
+    .features {
+      font-size: 14px;
+    }
+  
+    .faq h2 {
+      font-size: 24px;
+    }
+  
+    .accordion label {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    label::after {
+      font-size: 18px;
+      right: 10px;
+    }
+  
+    /* Ensure username is properly aligned */
+    .user-info {
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+  
+    .user-info span {
+      font-size: 13px;
+    }
+  }
+  
