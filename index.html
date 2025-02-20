@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Netflix Clone</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="header">
     <nav>
@@ -13,13 +15,9 @@
         <button class="language-btn">
           English <img src="images/down-icon.png" alt="Dropdown Icon">
         </button>
-
-        <!-- The Sign In button will be hidden if user is logged in -->
         <a href="signin.html"><button id="sign-in-btn">Sign In</button></a>
-
-        <!-- Display welcome message & logout when user is logged in -->
         <span id="user-name" style="margin-left: 15px;"></span>
-        <button id="logout-btn" style="display:none;">Logout</button>
+        <button id="logout-btn" style="display: none;">Logout</button>
       </div>
     </nav>
 
@@ -34,8 +32,8 @@
     </div>
   </div>
 
-  <!-- Features Section -->
-  <div class="features">
+  <!-- Features Section (Hidden after login) -->
+  <div class="features" id="features-section">
     <div class="row">
       <div class="text-col">
         <h2>Enjoy on your TV</h2>
@@ -76,7 +74,31 @@
           your membership.</p>
       </div>
     </div>
+
   </div>
+
+  <!-- Movie Categories (Visible after login) -->
+  <div class="movies-section" id="movies-section" style="display: none;">
+    <h2>Popular Movies</h2>
+    <br>
+    <div class="movies-row" id="popular-movies"></div>
+    <br>
+
+
+    <h2>Trending Now</h2>
+    <br>
+
+    <div class="movies-row" id="trending-movies"></div>
+    <br>
+
+
+    <h2>Top Rated</h2>
+    <br>
+
+    <div class="movies-row" id="top-rated-movies"></div>
+  </div>
+
+
 
   <!-- FAQ Section -->
   <div class="faq">
@@ -149,7 +171,7 @@
     </form>
   </div>
 
-  <!-- Footer -->
+
   <div class="footer">
     <h2>Questions? call 8591604077</h2>
     <div class="row">
@@ -165,26 +187,18 @@
         <a href="#">Cookie preferences</a>
         <a href="#">Legal Notices</a>
       </div>
-      <div class="col">
-        <a href="#">Account</a>
-        <a href="#">Ways to watch</a>
-        <a href="#">Corporate Information</a>
-        <a href="#">Only on Netflix</a>
-      </div>
-      <div class="col">
-        <a href="#">Media Center</a>
-        <a href="#">Terms of Use</a>
-        <a href="#">Contact Us</a>
-      </div>
+      
     </div>
     <button class="language-btn">English <img src="images/down-icon.png" alt="Down Icon"></button>
     <p class="copyright-text">Netflix India</p>
   </div>
 
-  <!-- Firebase & Scripts -->
+
+  <!-- Firebase & JS Scripts -->
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
   <script src="firebase-config.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
